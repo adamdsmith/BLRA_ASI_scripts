@@ -31,10 +31,10 @@ P1.playsound=true; % Sound available for playback
 P1.linefreq=[450 5000]; % Set reference lines on spectrogram; of no consequence to analysis
 
 % P2: letter candidate search and acceptance parameters
-P2.dfreq_min=500; % minimum bandwidth of letter candidate
+P2.dfreq_min=500; % minimum bandwidth of letter candidate **INCREASE BANDWIDTH FOR LETTERS
 P2.dfreq_max=3500; % maximum bandwidth of letter candidate
-P2.freq_min=450; % minimum freq of letter candidate
-P2.freq_max=4500; % maximum freq of letter candidate
+P2.freq_min=450; % minimum freq of letter candidate **IMPORTANT CHANGE TO TARGET BLRA
+P2.freq_max=4500; % maximum freq of letter candidate **IMPORTANT CHANGE TO TARGET BLRA
 P2.dx_min=20; % minimum # of frames (length = dx_min * frame length) for letter candidate; 100 ms here
 P2.dx_max=200; % maximum # of frames for letter candidate; 1 s here
 P2.correlation_threshold=0.9; % minimum cross correlation to be accepted as letter candidate; this is ignored when pulling candidate by file
